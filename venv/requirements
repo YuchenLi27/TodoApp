@@ -1,0 +1,7 @@
+Flask==2.3.3
+SQLAlchemy~=2.0.29
+loguru~=0.7.2
+boto3~=1.34.88
+botocore~=1.34.88
+psycopg2-binary~=2.9.9
+# dependency is library in python, same thing but different name

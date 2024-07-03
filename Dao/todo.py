@@ -13,9 +13,11 @@ class Todo(Base):
     title: Mapped[str] = mapped_column(String(200), nullable=False)
     content: Mapped[str] = mapped_column(String(200), nullable=False)
     completed: Mapped[int] = mapped_column(Integer, default=0)
-    pub_date: Mapped[datetime] = mapped_column(DateTime, dafault= datetime.now)
+    pub_date: Mapped[datetime] = mapped_column(DateTime, dafault=datetime.now)
+# name: type
 
     def __repr__(self):
         return ("Task: id: {/%r}  title:{%s}, content:{%s} publication_date:{%s}>" %
                 (self.id, self.title, self.content, self.pub_date))
 
+# python tostring
